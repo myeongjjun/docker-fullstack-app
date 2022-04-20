@@ -20,7 +20,7 @@ after_success:
 
   - docker push mjko326/docker-frontend
   - docker push mjko326/docker-backend
-  - docker push mjko326/docker-nginx
+  - docker push mjko326/docker-p-northeast-2
 deploy:
   provider: elasticbeanstalk
   region: "ap-northeast-2"
@@ -30,5 +30,6 @@ deploy:
   bucket_path: "docker-fullstack-app"
   on:
     branch: main
+
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_ACCESS_KEY
