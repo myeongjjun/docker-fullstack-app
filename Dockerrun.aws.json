@@ -1,6 +1,6 @@
 {
     "AWSEBDockerrunVersion": 2,
-    "containerDefinition": [
+    "containerDefinitions": [
         {
             "name": "frontend",
             "image": "mjko326/docker-frontend",
@@ -25,7 +25,7 @@
                     "hostPort": 80,
                     "containerPort": 80
                 }
-            ],  
+            ],
             "links": ["frontend", "backend"],
             "memory": 128
         }
