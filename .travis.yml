@@ -20,7 +20,7 @@ after_success:
 
   - docker push mjko326/docker-frontend
   - docker push mjko326/docker-backend
-  - docker push mjko326/docker-p-northeast-2
+  - docker push mjko326/docker-nginx
 deploy:
   provider: elasticbeanstalk
   region: "ap-northeast-2"
